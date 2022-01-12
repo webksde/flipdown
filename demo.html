@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipdown Demo</title>
+  <link rel="stylesheet" href="src/flipdown.css">
+  <script src="src/flipdown.js"></script>
+  <style>
+    body{
+      padding:2rem;
+      font-family: sans-serif;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new FlipDown(1644915129, "flipdown").start();
+      new FlipDown(1650009129, "registerBy").start();
+    });
+  </script>
+</head>
+<body>
+  <h1>Flipdown Demo</h1>
+  <h2>Basic Usage</h2>
+  <div id="flipdown" class="flipdown"></div>
+  <h2>Multiple Instances</h2>
+  <div id="registerBy" class="flipdown"></div>
+</body>
+</html>
